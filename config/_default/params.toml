@@ -1,6 +1,6 @@
 # Hugo
-title = "My Docs"
-description = "Congrats on setting up a new Doks project!"
+title = "Nusantara"
+description = "A free learning platform to master the world of computing—from hardware foundations to building real-world products."
 images = ["cover.png"]
 
 # mainSections
@@ -51,7 +51,7 @@ mainSections = ["docs"]
   scrollSpy = true # true (default) or false
 
   # Multilingual
-  multilingualMode = false # false (default) or true
+  multilingualMode = true # false (default) or true
   showMissingLanguages = true # whether or not to show untranslated languages in the language menu; true (default) or false
 
   # Versioning

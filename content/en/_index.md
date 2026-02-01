@@ -1,7 +1,7 @@
 ---
-title: "Welcome to Doks"
+title: "Welcome to nusantara"
 description: ""
-lead: "Congrats on setting up a new Doks project!"
+lead: "A free learning platform to master the world of computing—from hardware foundations to building real-world products."
 date: 2023-09-07T16:33:54+02:00
 lastmod: 2023-09-07T16:33:54+02:00
 draft: false
