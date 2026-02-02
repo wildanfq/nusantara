@@ -1,18 +1,23 @@
 [en]
-  languageName = "English"
   contentDir = "content/en"
+  disabled = false
+  languageCode = 'en-US'
+  languageDirection = 'ltr'
+  languageName = "English"
+  title = 'Nusa'
   weight = 10
   [en.params]
-    languageISO = "EN"
-    languageTag = "en-US"
     footer = 'Brought to you by <a class="text-muted" href="https://thulite.io/">Wildan FQ</a>'
     alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/example-post/">Doks version 1.0 just shipped!</a>'
+
 [id]
-  languageName = "Indonesian"
   contentDir = "content/id"
+  disabled = false
+  languageCode = 'id-ID'
+  languageDirection = 'ltr'
+  languageName = "Indonesian"
+ title = 'Nusa'
   weight = 20
   [id.params]
-    languageISO = "ID"
-    languageTag = "id-ID"
     footer = 'Di buat oleh <a class="text-muted" href="https://thulite.io/">Wildan FQ</a>'
     alertText = 'Versi baru tersedia! <a class="alert-link stretched-link" href="https://getdoks.org/blog/doks-v0.5/">Doks v0.5</a>'

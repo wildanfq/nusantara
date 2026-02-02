@@ -1,7 +1,7 @@
 ---
-title: "Welcome to nusantara"
+title: "Nusantara Labs"
 description: ""
-lead: "Platform kursus gratis untuk mempelajari dunia komputer secara mendalam—mulai dari dasar elektronika hingga menciptakan produk nyata."
+lead: "Platform kursus gratis untuk mempelajari komputer secara mendalam—mulai dari dasar elektronika hingga menciptakan produk nyata."
 date: 2023-09-07T16:33:54+02:00
 lastmod: 2023-09-07T16:33:54+02:00
 draft: false
