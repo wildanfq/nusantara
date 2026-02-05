@@ -1,5 +1,5 @@
 ---
-title: "Nusantara Labs"
+title: "Welcome to nusantara labs"
 description: ""
 lead: "A free learning platform to master the world of computing—from hardware foundations to building real-world products."
 date: 2023-09-07T16:33:54+02:00

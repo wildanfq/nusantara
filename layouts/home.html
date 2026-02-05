@@ -6,7 +6,13 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="{{ (print "/docs/" (cond site.Params.doks.docsVersioning (print site.Params.doks.docsVersion "/") "") "guides/example-guide/") | relLangURL }}" role="button">{{ i18n "get_started" }}</a>
+
+      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3"
+         href="{{ (print "/docs/" (cond site.Params.doks.docsVersioning (print site.Params.doks.docsVersion "/") "") "guides/get-started/") | relLangURL }}"
+         role="button">
+         {{ i18n "get_started" }}
+      </a>
+
       {{ .Content }}
     </div>
   </div>
@@ -20,64 +26,41 @@
   </div>
   {{ end -}}
 
-  {{ if eq $.Site.Language.LanguageName "English" }}
   <section class="section section-md section-features">
     <div class="container">
       <div class="row justify-content-center text-center">
-        <div class="col-md-4 mb-5">
-          <h2 class="h5 fw-bold text-dark">Fundamental</h2>
-          <p class="text-secondary">Master the bedrock of engineering through Technical English, Mathematics, and Physics to build the analytical mindset required for complex problem-solving.</p>
-        </div>
 
-        <div class="col-md-4 mb-5">
-          <h2 class="h5 fw-bold text-dark">Hardware</h2>
-          <p class="text-secondary">Dive into silicon design with RISC-V Architecture and Verilog, culminating in creating custom PCB Boards to bring digital logic to life.</p>
-        </div>
+        {{ if eq .Site.Language.Lang "en" }}
+          <div class="col-md-4 mb-5">
+            <h2 class="h5 fw-bold text-dark">Fundamental</h2>
+            <p class="text-secondary">Master the bedrock of engineering through Technical English, Mathematics, and Physics.</p>
+          </div>
+          <div class="col-md-4 mb-5">
+            <h2 class="h5 fw-bold text-dark">Hardware</h2>
+            <p class="text-secondary">Dive into silicon design with RISC-V Architecture and Verilog/FPGA.</p>
+          </div>
+          <div class="col-md-4 mb-5">
+            <h2 class="h5 fw-bold text-dark">Software</h2>
+            <p class="text-secondary">Control the machine using Assembly and Zig for low-level systems.</p>
+          </div>
+        {{ else }}
+          <div class="col-md-4 mb-5">
+            <h2 class="h5 fw-bold text-dark">Fundamental</h2>
+            <p class="text-secondary">Kuasai dasar rekayasa melalui Kimia, Fisika, dan Matematika Logika.</p>
+          </div>
+          <div class="col-md-4 mb-5">
+            <h2 class="h5 fw-bold text-dark">Hardware</h2>
+            <p class="text-secondary">Pelajari perancangan sirkuit berbasis RISC-V dan produksi papan PCB kustom.</p>
+          </div>
+          <div class="col-md-4 mb-5">
+            <h2 class="h5 fw-bold text-dark">Software</h2>
+            <p class="text-secondary">Kendalikan mesin lewat Assembly dan Zig untuk membangun OS sendiri.</p>
+          </div>
+        {{ end }}
 
-        <div class="col-md-4 mb-5">
-          <h2 class="h5 fw-bold text-dark">Software</h2>
-          <p class="text-secondary">Control the machine using Assembly and Zig. Focus on low-level systems programming to develop a custom Microkernel OS and memory management.</p>
-        </div>
-      </div>
-
-      <div class="row justify-content-center text-center">
-        <div class="col-md-6">
-          <h2 class="h5 fw-bold text-dark">Final Project</h2>
-          <p class="text-secondary">The ultimate synthesis: build a functional Single Board Computer (SBC) by integrating your custom RISC-V processor with your proprietary Zig-based operating system.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  {{ else if eq $.Site.Language.LanguageName "Indonesian" }}
-  <section class="section section-md section-features">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-md-4 mb-5">
-          <h2 class="h5 fw-bold text-dark">Fundamental</h2>
-          <p class="text-secondary">Kuasai dasar rekayasa melalui Kimia, Fisika, dan Matematika Logika untuk membangun pola pikir analitis dalam memecahkan masalah kompleks.</p>
-        </div>
-
-        <div class="col-md-4 mb-5">
-          <h2 class="h5 fw-bold text-dark">Hardware</h2>
-          <p class="text-secondary">Pelajari perancangan sirkuit berbasis RISC-V dan FPGA, hingga memproduksi papan PCB kustom untuk menghidupkan gerbang logika digital.</p>
-        </div>
-
-        <div class="col-md-4 mb-5">
-          <h2 class="h5 fw-bold text-dark">Software</h2>
-          <p class="text-secondary">Kendalikan mesin langsung lewat Assembly dan Zig. Fokus pada pemrograman sistem untuk membangun OS Microkernel dan manajemen memori sendiri.</p>
-        </div>
-      </div>
-
-      <div class="row justify-content-center text-center">
-        <div class="col-md-6">
-          <h2 class="h5 fw-bold text-dark">Proyek Akhir</h2>
-          <p class="text-secondary">Sintesis tertinggi: bangun Single Board Computer (SBC) fungsional dengan mengintegrasikan prosesor RISC-V kustom dan sistem operasi berbasis Zig buatanmu.</p>
-        </div>
       </div>
     </div>
   </section>
-  {{ end }}
 {{ end }}
 
 {{ define "sidebar-footer" }}
@@ -85,8 +68,13 @@
 <section class="section section-md container-fluid bg-light">
   <div class="row justify-content-center text-center">
     <div class="col-lg-7">
-      <h2 class="mt-2">Mulai membangun dengan Nusantara hari ini</h2>
-      <a class="btn btn-primary rounded-pill px-4 my-2" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
+      <h2 class="mt-2">{{ if eq .Site.Language.Lang "en" }}Start building with Nusantara today{{ else }}Mulai membangun dengan Nusantara hari ini{{ end }}</h2>
+
+      <a class="btn btn-primary rounded-pill px-4 my-2"
+         href="{{ (print "/docs/" (cond site.Params.doks.docsVersioning (print site.Params.doks.docsVersion "/") "") "guides/get-started/") | relLangURL }}"
+         role="button">
+         {{ i18n "get_started" }}
+      </a>
     </div>
   </div>
 </section>
