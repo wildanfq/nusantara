@@ -30,7 +30,7 @@
 
 [[main]]
   name = "Docs"
-url = "/docs/guides/get-started/"
+url = "/docs/hardware/electronics-fundamentals/"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 10
 
@@ -66,7 +66,7 @@ url = "/docs/guides/get-started/"
 
 # [[sidebar_docs]]
 #   name = "Guides"
-#   pageRef = "/docs/guides"
+#   pageRef = "/docs/hardware/electronics-fundamentals/"
 #   weight = 10
 #
 # [[sidebar_docs]]

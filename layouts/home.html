@@ -8,8 +8,9 @@
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
 
       <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3"
-         href="{{ (print "/docs/" (cond site.Params.doks.docsVersioning (print site.Params.doks.docsVersion "/") "") "guides/get-started/") | relLangURL }}"
-         role="button">
+      href="{{ (print "/docs/" (cond site.Params.doks.docsVersioning (print site.Params.doks.docsVersion "/") "") "hardware/electronics-fundamentals/") | relLangURL }}"
+
+      role="button">
          {{ i18n "get_started" }}
       </a>
 
@@ -71,8 +72,8 @@
       <h2 class="mt-2">{{ if eq .Site.Language.Lang "en" }}Start building with Nusantara today{{ else }}Mulai membangun dengan Nusantara hari ini{{ end }}</h2>
 
       <a class="btn btn-primary rounded-pill px-4 my-2"
-         href="{{ (print "/docs/" (cond site.Params.doks.docsVersioning (print site.Params.doks.docsVersion "/") "") "guides/get-started/") | relLangURL }}"
-         role="button">
+      href="{{ (print "/docs/" (cond site.Params.doks.docsVersioning (print site.Params.doks.docsVersion "/") "") "hardware/electronics-fundamentals/") | relLangURL }}"
+      role="button">
          {{ i18n "get_started" }}
       </a>
     </div>
