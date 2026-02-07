@@ -14,8 +14,6 @@ seo:
   noindex: false
 ---
 
-# Electronics Fundamentals for Computer Hardware
-
 Computer hardware is not a "magic box." Behind sophisticated processors and fast RAM, fundamental principles of Electronics are at work. Studying hardware without understanding electronics is like trying to write poetry without knowing the alphabet; you might be able to memorize the patterns, but you will never understand why that structure exists.
 
 ---

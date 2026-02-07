@@ -14,19 +14,15 @@ seo:
   noindex: false
 ---
 
-# Evolusi Perangkat Lunak: Dari Arus Listrik ke Logika Digital
-
 Banyak orang membayangkan perangkat lunak sebagai sesuatu yang "gaib" yang ada di dalam layar. Namun, secara fisik, perangkat lunak hanyalah sekumpulan instruksi yang mengatur lalu lintas listrik di dalam komponen keras (hardware). Untuk memahami software, kita harus membayangkan sebuah jembatan panjang yang menghubungkan pikiran manusia yang kompleks dengan transistor yang hanya mengenal "ada listrik" dan "tidak ada listrik".
 
 ---
 
 ## 1. Fondasi Terbawah: Dunia Biner
 
-Di dalam perut komputer, semuanya kembali ke fisik. Transistor bertindak seperti sakelar lampu yang sangat kecil. Ketika sakelar **Nyala (1)**, arus mengalir; ketika **Mati (0)**, arus berhenti. Inilah yang kita sebut sebagai **Bilangan Biner**.
+Di dalam komputer, semuanya kembali ke fisik. Transistor bertindak seperti sakelar lampu yang sangat kecil. Ketika sakelar **Nyala (1)**, arus mengalir; ketika **Mati (0)**, arus berhenti. Inilah yang kita sebut sebagai **Bilangan Biner**.
 
 Setiap angka atau huruf yang Anda lihat di layar sebenarnya adalah kombinasi ribuan hingga jutaan sakelar ini. Kumpulan angka biner yang membentuk instruksi langsung untuk otak komputer (CPU) disebut sebagai **Bahasa Mesin (Machine Code)**. Karena berupa deretan angka seperti `10110000`, bahasa ini hampir mustahil untuk ditulis atau dibaca oleh manusia secara langsung tanpa alat bantu.
-
-
 
 ---
 
@@ -46,16 +42,18 @@ Bahasa seperti Zig memungkinkan kita menulis logika yang rumit—seperti membuat
 
 ---
 
-## 4. Skema Hirarki Abstraksi
+## 4.Memahami Hirarki Abstraksi Bahasa Pemrograman
 
-Untuk memudahkan Anda membayangkan posisi setiap lapisan ini, perhatikan tabel hirarki di bawah ini:
+Dalam dunia komputasi, **abstraksi** adalah proses menyembunyikan detail teknis yang kompleks di balik antarmuka yang lebih sederhana. Semakin tinggi tingkatannya, semakin dekat ia dengan cara berpikir manusia. Sebaliknya, semakin rendah tingkatannya, semakin dekat ia dengan cara kerja fisik mesin.
 
-| Lapisan | Media Komunikasi | Target Utama | Kedekatan dengan Manusia |
-| :--- | :--- | :--- | :--- |
-| **Aplikasi (UI)** | Gambar, Tombol, Teks | Pengguna Akhir | Sangat Tinggi (Intuitif) |
-| **High-Level (Zig)** | Logika & Struktur Data | Programmer & Sistem | Tinggi (Logis) |
-| **Low-Level (Assembly)** | Instruksi Register CPU | Hardware Spesifik | Rendah (Teknis) |
-| **Hardware (Biner)** | Sinyal Tegangan Listrik | Transistor & Chip | Nol (Fisik) |
+Tabel di bawah ini merangkum bagaimana instruksi manusia berubah menjadi sinyal listrik:
+
+| **Tingkat Abstraksi** | **Media Komunikasi** | **Target Utama** | **Kedekatan dengan Manusia** |
+| --- | --- | --- | --- |
+| **Aplikasi (UI)** | Gambar, Tombol, Teks | Pengguna Akhir | **Sangat Tinggi** (Intuitif) |
+| **High-Level Language** | Logika & Struktur Data | Programmer & Sistem | **Tinggi** (Logis) |
+| **Low-Level Language** | Instruksi Register CPU | Hardware Spesifik | **Rendah** (Teknis) |
+| **Hardware (Biner)** | Sinyal Tegangan Listrik | Transistor & Chip | **Nol** (Fisik) |
 
 ---
 

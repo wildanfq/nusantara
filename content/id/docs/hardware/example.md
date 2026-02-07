@@ -1,5 +1,5 @@
 ---
-title: "electronics-fundamentals"
+title: "Dasar Elektronik"
 description: "Mengenal komponen elektronika dasar dan cara merakit sirkuit sederhana untuk pemula."
 summary: "Pelajari fungsi LED, Resistor, dan Baterai melalui contoh sirkuit sederhana."
 date: 2023-09-07T16:04:48+02:00
@@ -13,8 +13,6 @@ seo:
   canonical: ""
   noindex: false
 ---
-
-# Dasar elektronika untuk hardware komputer
 
 Hardware komputer bukanlah sebuah "kotak ajaib". Di balik canggihnya prosesor dan cepatnya RAM, terdapat prinsip dasar Elektronika yang bekerja. Mempelajari hardware tanpa memahami elektronika ibarat mencoba menulis puisi tanpa mengenal alfabet; Anda mungkin bisa menghafal polanya, tetapi Anda tidak akan pernah paham mengapa struktur tersebut bisa tercipta.
 

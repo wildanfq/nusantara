@@ -4,7 +4,7 @@
   languageCode = 'en-US'
   languageDirection = 'ltr'
   languageName = "English"
-  title = 'Nusa'
+  title = 'Nusantara'
   weight = 10
   [en.params]
     footer = 'Brought to you by <a class="text-muted" href="https://thulite.io/">Wildan FQ</a>'
@@ -16,7 +16,7 @@
   languageCode = 'id-ID'
   languageDirection = 'ltr'
   languageName = "Indonesian"
- title = 'Nusa'
+ title = 'Nusantara'
   weight = 20
   [id.params]
     footer = 'Di buat oleh <a class="text-muted" href="https://thulite.io/">Wildan FQ</a>'
