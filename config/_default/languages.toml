@@ -17,7 +17,7 @@
   languageDirection = 'ltr'
   languageName = "Indonesian"
  title = 'Nusantara'
-  weight = 20
+  weight = 10
   [id.params]
     footer = 'Di buat oleh <a class="text-muted" href="https://thulite.io/">Wildan FQ</a>'
     alertText = 'Versi baru tersedia! <a class="alert-link stretched-link" href="https://getdoks.org/blog/doks-v0.5/">Doks v0.5</a>'
