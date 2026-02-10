@@ -99,7 +99,7 @@ Resistor adalah komponen yang paling sederhana namun memiliki peran paling pembe
 
 Fungsi utama resistor melampaui sekadar penghambat. Ia bertindak sebagai pembagi tegangan yang sangat akurat, yang memungkinkan kita untuk memotong nilai voltase dari sumber utama agar sesuai dengan kebutuhan spesifik setiap komponen kecil lainnya. Tanpa keberadaan resistor, kita tidak akan memiliki kendali atas seberapa banyak arus yang boleh lewat, sehingga setiap sirkuit yang kita buat akan selalu berada dalam risiko korsleting yang berbahaya.
 
-> **Referensi:** Pelajari lebih lanjut mengenai [Komponen Resistro di wikipedia](https://id.wikipedia.org/wiki/resistor).
+> **Referensi:** Pelajari lebih lanjut mengenai [Komponen Resistor di wikipedia](https://id.wikipedia.org/wiki/resistor).
 
 ### 2. Kapasitor: Sang Penampung Tegangan
 
