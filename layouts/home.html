@@ -8,7 +8,7 @@
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
 
       <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3"
-      href="{{ if eq .Site.Language.Lang "id" }}{{ "/docs/hardware/dasar-elektronik/" | relLangURL }}{{ else }}{{ "/docs/hardware/electronics-fundamentals/" | relLangURL }}{{ end }}"
+      href="{{ if eq .Site.Language.Lang "id" }}{{ "/docs/hardware/dasar-elektronik/" | relLangURL }}{{ else }}{{ "/docs/hardware/electronic-basic/" | relLangURL }}{{ end }}"
       role="button">
          {{ i18n "get_started" }}
       </a>
@@ -73,7 +73,7 @@
       </h2>
 
       <a class="btn btn-primary rounded-pill px-4 my-2"
-      href="{{ if eq .Site.Language.Lang "id" }}{{ "/docs/hardware/dasar-elektronik/" | relLangURL }}{{ else }}{{ "/docs/hardware/electronics-fundamentals/" | relLangURL }}{{ end }}"
+      href="{{ if eq .Site.Language.Lang "id" }}{{ "/docs/hardware/dasar-elektronik/" | relLangURL }}{{ else }}{{ "/docs/hardware/electronic-basic/" | relLangURL }}{{ end }}"
       role="button">
          {{ i18n "get_started" }}
       </a>

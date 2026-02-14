@@ -1,5 +1,5 @@
 ---
-title: "Software Fundamentals"
+title: "Software Basics"
 description: "A comprehensive guide to understanding the evolution of software from binary electrical signals to modern programming languages like Zig, Go, and Dart."
 summary: "Learn how human instructions transform into machine logic through binary layers, assembly, and high-level modern language ecosystems."
 date: 2023-09-07T16:13:18+02:00
