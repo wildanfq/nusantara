@@ -5,13 +5,14 @@ const whitelister = require('purgecss-whitelister');
 module.exports = {
     plugins: [
         autoprefixer(),
-        purgeCSSPlugin({
+        new purgeCSSPlugin({
             content: ['./hugo_stats.json'],
             extractors: [
                 {
                     extractor: (content) => {
-                        const els = JSON.parse(content).htmlElements;
-                        return els.tags.concat(els.classes, els.ids);
+                        const data = JSON.parse(content);
+                        const els = data.htmlElements || { tags: [], classes: [], ids: [] };
+                        return (els.tags || []).concat(els.classes || [], els.ids || []);
                     },
                     extensions: ['json']
                 }
@@ -23,29 +24,29 @@ module.exports = {
                 'data-bs-theme',
                 'data-dark-mode',
                 'data-global-alert',
-                'data-pane', // tabs.js
+                'data-pane',
                 'data-popper-placement',
                 'data-sizes',
-                'data-toggle-tab', // tabs.js
+                'data-toggle-tab',
                 'id',
                 'size',
                 'type'
             ],
             safelist: [
                 'active',
-                'btn-clipboard', // clipboards.js
-                'clipboard', // clipboards.js
+                'btn-clipboard',
+                'clipboard',
                 'disabled',
                 'hidden',
-                'modal-backdrop', // search-modal.js
-                'selected', // search-modal.js
+                'modal-backdrop',
+                'selected',
                 'show',
                 'img-fluid',
                 'blur-up',
                 'lazyload',
                 'lazyloaded',
                 'alert-link',
-                'container-fw ',
+                'container-fw',
                 'container-lg',
                 'container-fluid',
                 'offcanvas-backdrop',
@@ -57,7 +58,12 @@ module.exports = {
                 'page-item',
                 'page-link',
                 'not-content',
-                ...whitelister(['./assets/scss/**/*.scss', './node_modules/@thulite/doks-core/assets/scss/components/_code.scss', './node_modules/@thulite/doks-core/assets/scss/components/_expressive-code.scss', './node_modules/@thulite/doks-core/assets/scss/common/_syntax.scss'])
+                ...whitelister([
+                    './assets/scss/**/*.scss',
+                    './node_modules/@thulite/doks-core/assets/scss/components/_code.scss',
+                    './node_modules/@thulite/doks-core/assets/scss/components/_expressive-code.scss',
+                    './node_modules/@thulite/doks-core/assets/scss/common/_syntax.scss'
+                ])
             ]
         })
     ]
