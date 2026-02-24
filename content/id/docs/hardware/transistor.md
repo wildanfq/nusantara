@@ -11,7 +11,7 @@ seo:
   title: "Panduan Komponen Aktif"
   description: "Cara mudah memahami sirkuit elektronik dasar dengan penjelasan komponen yang lengkap, sistematis, dan detail."
   canonical: ""
-  noindex: false 
+  noindex: false
 ---
 
 Berbeda dengan **komponen pasif** (seperti resistor atau kapasitor) yang hanya menyerap atau melepaskan energi, **komponen aktif** memiliki kemampuan untuk **mengendalikan (mengatur)** aliran elektron.
@@ -81,9 +81,13 @@ MOSFET adalah standar industri untuk prosesor (CPU) saat ini. Berbeda dengan BJT
 2. **Drain:** Saluran masuk arus (setara Kolektor).
 3. **Source:** Saluran keluar arus (setara Emitor).
 
----
+### Jenis Utama:
 
-## Ringkasan Perbandingan
+N-Channel (NMOS): Aktif (ON) ketika tegangan Gate lebih positif daripada Source. (Paling sering digunakan sebagai sakelar).
+
+P-Channel (PMOS): Aktif (ON) ketika tegangan Gate lebih rendah daripada Source.
+
+### Ringkasan Perbandingan
 
 | Fitur | BJT | MOSFET |
 | --- | --- | --- |
@@ -117,23 +121,5 @@ Secara garis besar, IC dibagi menjadi tiga kategori utama berdasarkan cara merek
 | **Digital** | Mengolah data biner (0 dan 1). Berfungsi sebagai otak logika. | Microprocessor (CPU), RAM, Microcontroller. |
 | **Analog** | Mengolah sinyal kontinu (suara, frekuensi radio, suhu). | Penguat operasional (Op-Amp), IC Radio. |
 | **Mixed-Signal** | Gabungan keduanya. Mengubah analog ke digital atau sebaliknya. | Chip Audio (DAC/ADC), Sensor Sidik Jari. |
-
----
-
-### Bentuk Fisik & Pengemasan (Packaging)
-
-IC tidak bisa disentuh langsung karena bagian dalamnya sangat rapuh. Oleh karena itu, IC dibungkus dalam wadah pelindung dengan kaki-kaki logam sebagai penghubung:
-
-1. **DIP (Dual In-line Package):** Memiliki dua baris kaki yang panjang. Biasanya digunakan untuk *prototyping* pada *breadboard*.
-2. **SMD (Surface Mount Device):** Ukurannya jauh lebih kecil dan langsung ditempel di permukaan PCB (tanpa lubang). Contoh: **SOP, QFP, BGA**.
-3. **BGA (Ball Grid Array):** Tidak menggunakan kaki, melainkan bola-bola timah kecil di bawah chip. Ini digunakan pada chip kelas berat seperti CPU dan GPU.
-
----
-
-### Hukum Moore (Moore's Law)
-
-Sebuah fakta menarik dalam dunia IC adalah **Hukum Moore**, yang memprediksi bahwa jumlah transistor di dalam sebuah IC akan berlipat ganda setiap dua tahun sekali. Inilah alasan mengapa ponsel Anda hari ini jauh lebih kuat daripada superkomputer besar di tahun 90-an.
-
-> **Catatan Penting:** Meskipun IC sangat kuat, ia sangat sensitif terhadap **ESD (Electrostatic Discharge)**. Listrik statis dari tangan manusia bisa membakar sirkuit mikroskopis di dalamnya dalam sekejap.
 
 ---
