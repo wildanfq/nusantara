@@ -11,7 +11,7 @@ rssLimit = 10
 summarylength = 20 # 70 (default)
 
 # Multilingual
-defaultContentLanguage = "en"
+defaultContentLanguage = "id"
 disableLanguages = []
 defaultContentLanguageInSubdir = false
 

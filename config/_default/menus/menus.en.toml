@@ -30,7 +30,7 @@
 
 [[main]]
   name = "Blog"
-  url = "/blog/"
+  url = "en/blog/"
   weight = 30
 
 # [[social]]
