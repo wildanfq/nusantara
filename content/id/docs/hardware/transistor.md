@@ -5,7 +5,7 @@ summary: "Pelajari konsep listrik komponen aktif dan bagaimana mereka bekerja."
 date: 2023-09-07T16:04:48+02:00
 lastmod: 2026-02-14T19:30:00+07:00
 draft: false
-weight: 810
+weight: 200
 toc: true
 seo:
   title: "Panduan Komponen Aktif"
@@ -67,6 +67,7 @@ Transistor adalah komponen dengan tiga terminal yang berfungsi sebagai **sakelar
 BJT beroperasi dengan menggunakan dua jenis pembawa muatan (*holes* dan elektron). BJT adalah perangkat yang **dikendalikan oleh arus** (*Current-Controlled*).
 
 * **Terminal:**
+
 1. **Base (Basis):** Gerbang pengendali (arus kecil di sini mengatur arus besar).
 2. **Collector (Kolektor):** Saluran masuk arus utama.
 3. **Emitter (Emitor):** Saluran keluar arus.
@@ -77,11 +78,12 @@ MOSFET adalah standar industri untuk prosesor (CPU) saat ini. Berbeda dengan BJT
 
 * **Keunggulan:** Memiliki impedansi input yang sangat tinggi (hampir tidak ada arus yang masuk ke gerbang), sehingga sangat efisien dan tidak cepat panas.
 * **Terminal:**
+
 1. **Gate (Gerbang):** Pengendali berbasis medan listrik (tegangan).
 2. **Drain:** Saluran masuk arus (setara Kolektor).
 3. **Source:** Saluran keluar arus (setara Emitor).
 
-### Jenis Utama:
+### Jenis Utama
 
 N-Channel (NMOS): Aktif (ON) ketika tegangan Gate lebih positif daripada Source. (Paling sering digunakan sebagai sakelar).
 

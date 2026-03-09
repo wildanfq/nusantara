@@ -5,13 +5,13 @@ summary: "Pelajari konsep listrik dari tingkat atom hingga praktik merakit sirku
 date: 2023-09-07T16:04:48+02:00
 lastmod: 2026-02-14T19:30:00+07:00
 draft: false
-weight: 810
+weight: 100
 toc: true
 seo:
   title: "Panduan Belajar Dasar Elektronika untuk Pemula | TeknoEdu"
   description: "Cara mudah memahami sirkuit elektronik dasar dengan penjelasan komponen yang lengkap, sistematis, dan detail."
   canonical: ""
-  noindex: false 
+  noindex: false
 ---
 
 Memahami **hardware komputer** tanpa tahu elektronika dasar ibarat belajar menyetir mobil tanpa tahu cara kerja mesin. Bab ini akan membangun fondasi Anda sebelum menyentuh komponen kompleks seperti *motherboard* atau *processor*. Semua sistem digital pada dasarnya adalah manipulasi arus listrik yang sangat presisi.
@@ -48,9 +48,11 @@ Dalam dunia komputer, kedua jenis arus ini digunakan secara berdampingan namun u
 
 Untuk memahami bagaimana sirkuit bekerja, kita bisa menggunakan **Analogi Pipa Air**:
 
-1.  **Tegangan (Voltage - V):** Diukur dalam **Volt**. Ini adalah "Tekanan Air". Gaya yang mendorong elektron agar mau mengalir dalam kabel.
-2.  **Arus (Current - I):** Diukur dalam **Ampere**. Ini adalah "Debit Air". Jumlah elektron yang mengalir melewati suatu titik dalam satu detik.
-3.  **Hambatan (Resistance - R):** Diukur dalam **Ohm (Ω)**. Ini adalah "Diameter Pipa". Sifat material yang menghambat atau membatasi laju aliran listrik.
+1. **Tegangan (Voltage - V):** Diukur dalam **Volt**. Ini adalah "Tekanan Air". Gaya yang mendorong elektron agar mau mengalir dalam kabel.
+
+2. **Arus (Current - I):** Diukur dalam **Ampere**. Ini adalah "Debit Air". Jumlah elektron yang mengalir melewati suatu titik dalam satu detik.
+
+3. **Hambatan (Resistance - R):** Diukur dalam **Ohm (Ω)**. Ini adalah "Diameter Pipa". Sifat material yang menghambat atau membatasi laju aliran listrik.
 
 ---
 
@@ -59,14 +61,19 @@ Untuk memahami bagaimana sirkuit bekerja, kita bisa menggunakan **Analogi Pipa A
 Sebelum masuk ke komponen aktif seperti transistor, Anda wajib mengenal "Tiga Serangkai" komponen pasif:
 
 ### A. Resistor (Penghambat)
+
 Berfungsi membatasi arus listrik. Tanpa resistor, komponen seperti LED akan terbakar karena menerima arus berlebih.
+
 * **Simbol:** Garis zig-zag atau persegi panjang kecil.
 
 ### B. Kapasitor (Penyimpan Muatan)
+
 Ibarat tangki air cadangan kecil. Ia menyimpan energi listrik sementara dan melepaskannya saat tegangan turun.
+
 * **Fungsi di PC:** Memastikan suplai listrik ke *processor* tetap halus (*smooth*) meskipun ada fluktuasi kecil.
 
 ### C. Induktor (Kumparan)
+
 Menyimpan energi dalam bentuk medan magnet. Digunakan untuk menyaring gangguan (*noise*) frekuensi tinggi agar sinyal data tidak korup atau error.
 
 ---
@@ -75,15 +82,18 @@ Menyimpan energi dalam bentuk medan magnet. Digunakan untuk menyaring gangguan (
 
 Hukum Ohm adalah rumus dasar yang menghubungkan Tegangan, Arus, dan Hambatan. Karena rumus matematika terkadang sulit tampil di web, gunakan panduan teks di bawah ini:
 
-### Segitiga Rumus:
+### Segitiga Rumus
+
 * **V = I x R** (Tegangan = Arus dikali Hambatan)
 * **I = V / R** (Arus = Tegangan dibagi Hambatan)
 * **R = V / I** (Hambatan = Tegangan dibagi Arus)
 
-### Contoh Kasus Praktis:
+### Contoh Kasus Praktis
+
 Anda memiliki baterai **9 Volt** dan sebuah lampu LED yang hanya boleh menerima arus maksimal **0,02 Ampere**. Berapa hambatan (Resistor) yang dibutuhkan agar LED tidak putus?
 
 **Cara Menghitung:**
+
 1. Gunakan rumus mencari R: **R = V / I**
 2. Masukkan angka: **R = 9 / 0,02**
 3. Hasilnya: **R = 450 Ohm**
@@ -96,10 +106,12 @@ Mari kita terapkan teori di atas ke dalam sebuah jalur tunggal yang nyata.
 
 ![Circuit Elektronik](elektronik.jpeg)
 
-### Daftar Alat dan Bahan:
-1.  **Power Source:** Baterai 9V (Sumber tenaga).
-2.  **Control:** Saklar/Switch (Pintu untuk memutus/menyambung arus).
-3.  **Protection:** Resistor 470 Ohm (Penjaga agar LED tidak meledak).
-4.  **Output:** LED (Lampu indikator).
-5.  **Medium:** Kabel Jumper (Jalan tol bagi elektron).
+### Daftar Alat dan Bahan
+
+1. **Power Source:** Baterai 9V (Sumber tenaga).
+2. **Control:** Saklar/Switch (Pintu untuk memutus/menyambung arus).
+3. **Protection:** Resistor 470 Ohm (Penjaga agar LED tidak meledak).
+4. **Output:** LED (Lampu indikator).
+5. **Medium:** Kabel Jumper (Jalan tol bagi elektron).
+
 ---
