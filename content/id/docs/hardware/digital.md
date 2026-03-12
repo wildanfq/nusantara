@@ -18,10 +18,7 @@ seo:
 
 ## 1. Gerbang NOT (Inverter)
 
-Gerbang NOT adalah gerbang paling sederhana namun sangat vital. Ia hanya memiliki **satu input** dan **satu output**. Fungsinya adalah membalikkan keadaan sinyal (*Inversion*).
-
-* **Aljabar Boolean:** $Y = \overline{A}$ (dibaca: Y adalah NOT A)
-* **Logika:** Jika input 1, output menjadi 0. Jika input 0, output menjadi 1.
+Gerbang NOT adalah gerbang paling sederhana namun sangat vital. Ia hanya memiliki **satu input** dan **satu output**. Fungsinya adalah membalikkan keadaan sinyal (*Inversion*), Jika input 1, output menjadi 0. Jika input 0, output menjadi 1.
 
 ### Tabel Kebenaran NOT
 
@@ -38,8 +35,6 @@ Gerbang NOT adalah gerbang paling sederhana namun sangat vital. Ia hanya memilik
 ## 2. Gerbang AND
 
 Gerbang AND beroperasi layaknya operasi perkalian. Ia hanya akan menghasilkan output **1 (HIGH)** jika **SEMUA** inputnya bernilai 1. Jika ada satu saja input yang bernilai 0, maka output akan 0.
-
-* **Aljabar Boolean:** $Y = A \cdot B$
 
 ### Tabel Kebenaran AND
 
@@ -59,8 +54,6 @@ Gerbang AND beroperasi layaknya operasi perkalian. Ia hanya akan menghasilkan ou
 
 Gerbang OR beroperasi layaknya operasi penjumlahan. Ia menghasilkan output **1 (HIGH)** jika **salah satu atau kedua** inputnya bernilai 1. Output hanya akan menjadi 0 jika semua inputnya 0.
 
-* **Aljabar Boolean:** $Y = A + B$
-
 ### Tabel Kebenaran OR
 
 | Input (A) | Input (B) | Output (Y) |
@@ -78,8 +71,6 @@ Gerbang OR beroperasi layaknya operasi penjumlahan. Ia menghasilkan output **1 (
 ## 4. Gerbang NAND (Not-AND)
 
 Gerbang NAND adalah gabungan dari gerbang AND yang diikuti oleh gerbang NOT. Outputnya adalah kebalikan dari gerbang AND. Menariknya, NAND disebut sebagai **Gerbang Universal**, karena Anda bisa merakit gerbang logika apa saja (AND, OR, NOT) hanya dengan menggunakan kumpulan gerbang NAND.
-
-* **Aljabar Boolean:** $Y = \overline{A \cdot B}$
 
 ### Tabel Kebenaran NAND
 
@@ -99,8 +90,6 @@ Gerbang NAND adalah gabungan dari gerbang AND yang diikuti oleh gerbang NOT. Out
 
 Sama seperti NAND, NOR juga merupakan **Gerbang Universal**. Ini adalah kebalikan dari gerbang OR. Outputnya hanya akan bernilai **1 (HIGH)** jika **semua** inputnya bernilai **0**.
 
-* **Aljabar Boolean:** $Y = \overline{A + B}$
-
 ### Tabel Kebenaran NOR
 
 | Input (A) | Input (B) | Output (Y) |
@@ -119,8 +108,6 @@ Sama seperti NAND, NOR juga merupakan **Gerbang Universal**. Ini adalah kebalika
 
 XOR adalah gerbang detektor perbedaan. Output akan menjadi **1 (HIGH)** *hanya* jika status kedua inputnya **berbeda** (satu 0 dan satunya 1). Jika kedua input sama, outputnya 0.
 
-* **Aljabar Boolean:** $Y = A \oplus B$
-
 ### Tabel Kebenaran XOR
 
 | Input (A) | Input (B) | Output (Y) |
@@ -138,8 +125,6 @@ XOR adalah gerbang detektor perbedaan. Output akan menjadi **1 (HIGH)** *hanya* 
 ## 7. Gerbang XNOR (Exclusive-NOR)
 
 Kebalikan dari XOR. Gerbang ini disebut juga sebagai detektor kesamaan (*Equality Detector*). Output bernilai **1 (HIGH)** *hanya* jika kedua inputnya bernilai **sama** (sama-sama 0 atau sama-sama 1).
-
-* **Aljabar Boolean:** $Y = \overline{A \oplus B}$
 
 ### Tabel Kebenaran XNOR
 
