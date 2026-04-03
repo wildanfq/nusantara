@@ -1,6 +1,6 @@
 ---
 title: "Profil"
-weight: 1
+weight: 7
 ---
 
 # Wildan Firmani Quraisi
