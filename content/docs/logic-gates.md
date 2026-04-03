@@ -1,6 +1,6 @@
 ---
 title: "Logic Gates"
-weight: 3
+weight: 4
 ---
 
 # Gerbang logika dasar

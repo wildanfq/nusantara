@@ -1,6 +1,6 @@
 ---
-title: "Combinational Logic"
-weight: 4
+title: "Combinational"
+weight: 5
 ---
 
 # Rangkaian Logika Kombinasional
