@@ -5,7 +5,6 @@ weight: 6
 
 Wildan Firmani Quraisi
 
-**IT Infrastructure Engineer**
 Sebagai seorang **IT Infrastructure Engineer** dengan pengalaman lebih dari 3 tahun, saya berfokus pada pembangunan ekosistem server yang tangguh melalui pendekatan **Infrastructure as Code (IaC)** dan otomatisasi penuh. Saya memiliki keahlian mendalam dalam mengelola siklus hidup infrastruktur secara *end-to-end*—mulai dari penyediaan perangkat keras fisik (*bare-metal*), arsitektur jaringan kompleks, hingga orkestrasi lingkungan *cloud* modern.
 
 Dedikasi saya adalah menciptakan sistem yang aman, memiliki ketersediaan tinggi (*high availability*), dan dapat diskalakan secara otomatis melalui implementasi *pipeline* CI/CD yang efisien.
