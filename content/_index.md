@@ -7,6 +7,30 @@ bookToC: false
 
 **Nusantara School** adalah platform edukasi terbuka yang didedikasikan bagi siapa saja yang ingin memahami dunia komputer secara mendalam, menyeluruh, dan fundamental.
 
-Dokumentasi ini dirancang sebagai panduan komprehensif bagi Anda yang ingin membangun fondasi teknis yang kuat di dunia Komputer sebelum memutuskan untuk mendalami spesialisasi tertentu. Kami percaya bahwa pemahaman mendasar yang kokoh adalah kunci untuk menjadi seorang profesional yang adaptif dan inovatif.
+### Alur Pembelajaran yang Terstruktur
 
----
+Dokumentasi ini disusun secara akurat untuk memandu Anda melalui perjalanan teknis yang runtut, mulai dari gerbang logika hingga terciptanya sebuah kepingan silikon. Berikut adalah tahapan yang akan Anda lalui:
+
+**Fase Fondasi dan Desain Arsitektur CPU**
+
+Perjalanan dimulai dengan memahami bagaimana sebuah instruksi diproses oleh gerbang logika dasar. Pada tahap awal ini, fokus utama adalah merancang unit fungsional seperti ALU, Register, dan Control Unit berbasis arsitektur RISC-V (RV32I) menggunakan simulasi visual Logisim Evolution. Setelah logika dasarnya matang, Anda akan belajar menerjemahkan desain visual tersebut ke dalam standar industri menggunakan *Hardware Description Language* (HDL), yaitu Verilog atau SystemVerilog. Penggunaan alat verifikasi seperti Verilator dan Icarus Verilog menjadi sangat krusial di sini untuk memastikan desain CPU bebas dari kesalahan logika sebelum melangkah ke perangkat keras.
+
+**Implementasi pada Perangkat Keras Nyata (FPGA)**
+
+Setelah desain digital tervalidasi, langkah selanjutnya adalah menanamkan kode HDL tersebut ke dalam chip FPGA untuk menguji kinerjanya secara fisik. Kami berkomitmen penuh menggunakan *toolchain* yang sepenuhnya *open-source*, seperti Yosys untuk sintesis logika dan nextpnr untuk proses *Place and Route*. Dengan menggunakan papan pengembangan seperti Lattice iCE40 atau ECP5, Anda dapat menyaksikan bagaimana desain logika yang tadinya hanya berupa kode di layar komputer kini benar-benar berdenyut dan menjalankan perintah di dalam perangkat keras nyata.
+
+**Pemrograman Sistem Tingkat Rendah**
+
+Setelah perangkat keras tercipta, fokus beralih ke aspek perangkat lunak tingkat rendah. Agar CPU yang dibangun memiliki performa maksimal dengan manajemen memori yang aman, kami menggunakan bahasa pemrograman Zig sebagai andalan utama. Zig menawarkan kendali penuh layaknya bahasa C, namun dengan pendekatan yang lebih modern dan aman (*memory-safe*). Pada tahap ini, Anda akan belajar menulis *startup code* dan *linker script* agar program dapat dipahami langsung oleh CPU RISC-V, menciptakan sinergi yang sempurna antara *software* dan *hardware*.
+
+**Pengembangan Software Bare-Metal, RTOS, dan Kernel**
+
+Fase berikutnya adalah memberikan "otak" pada sistem melalui pengembangan perangkat lunak *bare-metal* dan sistem operasi. Tantangannya adalah menciptakan *Real-Time Operating System* (RTOS) dan kernel dari nol (*from scratch*). Proses ini mencakup pemahaman mendalam tentang pengelolaan interupsi, *context switching*, hingga manajemen memori yang kompleks. Dengan membangun sistem operasi sendiri, Anda akan memiliki kontrol penuh terhadap bagaimana sumber daya komputasi dikelola, yang merupakan keahlian inti dalam pengembangan sistem tertanam (*embedded systems*).
+
+**Desain Fisik Silikon dan EDA (Electronic Design Automation)**
+
+Sebagai puncak dari seluruh proses pembelajaran, Anda akan mendalami dunia desain fisik silikon untuk menghasilkan *microchip* yang siap diproduksi di pabrik. Menggunakan alur kerja OpenLane atau LibreLane yang terintegrasi dengan PDK (*Process Design Kit*) industri seperti SkyWater 130nm, Anda akan mempelajari proses transformasi RTL-to-GDSII. Melalui tahap *Static Timing Analysis* (STA) hingga *Design Rule Check* (DRC), seluruh proses ini bermuara pada pembuatan berkas GDSII—sebuah cetak biru tata letak cip final yang siap dikirim ke *foundry* untuk dicetak menjadi kepingan silikon nyata.
+
+**kontributor**
+
+Kami selalu membuka pintu seluas-luasnya bagi para kontributor untuk ikut membangun dan menyempurnakan dokumentasi pembelajaran ini. Jika Anda menemukan kesalahan, kekurangan, atau memiliki saran perbaikan, silakan laporkan melalui fitur *Issue* di repositori GitHub kami agar platform ini dapat terus berkembang menjadi lebih baik.
