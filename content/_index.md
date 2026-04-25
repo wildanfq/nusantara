@@ -19,14 +19,6 @@ Perjalanan dimulai dengan memahami bagaimana sebuah instruksi diproses oleh gerb
 
 Setelah desain digital tervalidasi, langkah selanjutnya adalah menanamkan kode HDL tersebut ke dalam chip FPGA untuk menguji kinerjanya secara fisik. Kami berkomitmen penuh menggunakan *toolchain* yang sepenuhnya *open-source*, seperti Yosys untuk sintesis logika dan nextpnr untuk proses *Place and Route*. Dengan menggunakan papan pengembangan seperti Lattice iCE40 atau ECP5, Anda dapat menyaksikan bagaimana desain logika yang tadinya hanya berupa kode di layar komputer kini benar-benar berdenyut dan menjalankan perintah di dalam perangkat keras nyata.
 
-**Pemrograman Sistem Tingkat Rendah**
-
-Setelah perangkat keras tercipta, fokus beralih ke aspek perangkat lunak tingkat rendah. Agar CPU yang dibangun memiliki performa maksimal dengan manajemen memori yang aman, kami menggunakan bahasa pemrograman Zig sebagai andalan utama. Zig menawarkan kendali penuh layaknya bahasa C, namun dengan pendekatan yang lebih modern dan aman (*memory-safe*). Pada tahap ini, Anda akan belajar menulis *startup code* dan *linker script* agar program dapat dipahami langsung oleh CPU RISC-V, menciptakan sinergi yang sempurna antara *software* dan *hardware*.
-
-**Pengembangan Software Bare-Metal, RTOS, dan Kernel**
-
-Fase berikutnya adalah memberikan "otak" pada sistem melalui pengembangan perangkat lunak *bare-metal* dan sistem operasi. Tantangannya adalah menciptakan *Real-Time Operating System* (RTOS) dan kernel dari nol (*from scratch*). Proses ini mencakup pemahaman mendalam tentang pengelolaan interupsi, *context switching*, hingga manajemen memori yang kompleks. Dengan membangun sistem operasi sendiri, Anda akan memiliki kontrol penuh terhadap bagaimana sumber daya komputasi dikelola, yang merupakan keahlian inti dalam pengembangan sistem tertanam (*embedded systems*).
-
 **Desain Fisik Silikon dan EDA (Electronic Design Automation)**
 
 Sebagai puncak dari seluruh proses pembelajaran, Anda akan mendalami dunia desain fisik silikon untuk menghasilkan *microchip* yang siap diproduksi di pabrik. Menggunakan alur kerja OpenLane atau LibreLane yang terintegrasi dengan PDK (*Process Design Kit*) industri seperti SkyWater 130nm, Anda akan mempelajari proses transformasi RTL-to-GDSII. Melalui tahap *Static Timing Analysis* (STA) hingga *Design Rule Check* (DRC), seluruh proses ini bermuara pada pembuatan berkas GDSII—sebuah cetak biru tata letak cip final yang siap dikirim ke *foundry* untuk dicetak menjadi kepingan silikon nyata.
